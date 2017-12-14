@@ -8,18 +8,20 @@
 <body>
 
 <input class="input", type="text">
-
+<p></p>
 <script>
 
 var input=document.querySelector(".input");
+var para=document.querySelector("p");
 
-
-input.onchange = function add7(input) {
-	let result = input+7;
-	alert(result);
+function add7(num) {
+	var num = input.value;
+	return +num + 7;
 }
 
-
+input.onchange = function() {
+	para.textContent = add7();
+}
 
 
 </script>
