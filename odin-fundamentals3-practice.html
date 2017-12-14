@@ -7,14 +7,16 @@
 
 <body>
 
-
+<input class="input", type="text">
 
 <script>
 
+var input=document.querySelector(".input");
 
-function add7(n) {
-	let result = n+7;
-	console.log(result);
+
+input.onchange = function add7(input) {
+	let result = input+7;
+	alert(result);
 }
 
 
