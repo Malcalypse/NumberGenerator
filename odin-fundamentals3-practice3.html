@@ -15,7 +15,8 @@
 function capitalize () {
 	var input = prompt("Hit me");
 	var lower = input.toLowerCase();
-	alert(lower.charAt(0));
+	var first = lower.charAt(0);
+	alert(lower.replace(first, "$"));
 }
 
 capitalize();
